@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.wallet {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wallet table {
+  background-color: #e0e0e0;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.wallet table th , td , tr {
+  border-bottom: solid 1px #095cba;
+  border-right: solid 1px #095cba;
+}
+
+.edit-form button {
+  background-color: #095cba;
+  border-radius: 0.5rem;
+  color: aliceblue;
+  cursor: pointer;
+  font-weight: 700;
+  margin-right: 5%;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.add-form button {
+  background-color: #095cba;
+  border-radius: 0.5rem;
+  color: aliceblue;
+  cursor: pointer;
+  font-weight: 700;
+  margin-right: 5%;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.edit-btn {
+  background-color: #095cba;
+  border-radius: 0.5rem;
+  color: aliceblue;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+.delete-btn {
+  background-color: #c60000;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+.edit-form button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(105%);
+}
+
+.add-form button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(105%);
+}
+
+.wallet table button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(105%);
+}
+
+.edit-form input , select {
+  border-radius: 0.5rem;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.add-form input , select {
+  border-radius: 0.5rem;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.add-form {
+  align-items: center;
+  background-color: black;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 3px 5px 2px #00000025;
+  color: white;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+
+}
+
+.edit-form {
+  align-items: center;
+  background-color: #09ba61;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 3px 5px 2px #00000025;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+
+}
+
+.login-page {
+  align-content: center;
+  background-color: #095cba;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+  justify-content: center;
+
+}
+
+.login-page h1 {
+  color: #404650;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.login-page form {
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 2px #00000025;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2% 5% 5%;
+  width: 30vw;
+
+}
+
+.login-btn , .login-page form input {
+  border-radius: 0.25rem;
+  margin-top: 5%;
+  padding: 5%;
+  width: 80%;
+}
+
+.login-btn {
+  background-color: #095cba;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.219);
+  color: aliceblue;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s;
+  width: 80%;
+}
+
+.login-btn:hover {
+  background-color: black;
+  color: white;
+  transform: scale(105%);
+}
+
+.login-btn:disabled {
+  background-color: #0973b0;
+  color: #404650;
+  cursor: not-allowed;
+  transform: scale(100%);
+}
+
+.header {
+  align-items: center;
+  background-color: #0973b0;
+  color: aliceblue;
+  display: flex;
+  flex-flow: row wrap;
+  height: fit-content;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.header img {
+  width: 15%;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+}
+
+.row {
+  animation: getRow 0.3s forwards ease-in-out;
+  opacity: 0;
+}
+
+.row td {
+  height: 5px;
+}
+
+
+@keyframes getRow {
+
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delete-all {
+  background-color: #c60000;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+  height: 30px;
+  position: relative;
+  top: -62px;
+  width: 100%;
+  z-index: 1;
+
+}
