@@ -18,11 +18,6 @@ class Login extends React.Component {
     const minLength = 6;
     this.setState({
       [name]: value,
-    }, () => {
-      const { email, password } = this.state;
-      const validation = email
-        .includes('@') && email.includes('.com') && password.length >= minLength;
-      this.setState({ disableButton: !validation });
     });
   }
 
