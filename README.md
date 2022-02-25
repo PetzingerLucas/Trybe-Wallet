@@ -1,6 +1,6 @@
 
 # Habilidades
-Habilidades desenvolvidas nesse
+Habilidades desenvolvidas nesse projeto:
 
   * Criar um store Redux em aplicações React
 
